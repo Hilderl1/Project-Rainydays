@@ -1,2 +1,4 @@
 # Project-Rainydays
-This project is going so well...
+Hello!
+Welcome to my page
+
