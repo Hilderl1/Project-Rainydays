@@ -49,3 +49,17 @@ nav a:hover {
     color: #0B5951;
 
 }
+
+.kayak-image {
+    margin: 100px;
+    float: left;
+    max-width: 270px;
+    border-radius: 3%;
+}
+
+.ladysnow-image {
+    margin: 100px;
+    float: right;
+    max-width: 270px;
+    border-radius: 3%;
+}
