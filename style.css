@@ -1,62 +1,55 @@
-
 body {
-    margin: 0;
-    background-color: #918877;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+  margin: 0;
+  background-color: #918877;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
 }
 
 .RainyDaysLogo {
-    background-image: url(img/RainyDays_Logo.png);
-    background-size: 300px;
-    width: 400px;
-    height: 200px;
-    top: 20px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 45px;
-
+  background-image: url(img/RainyDays_Logo.png);
+  background-size: 300px;
+  width: 400px;
+  height: 200px;
+  top: 20px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px;
 }
 
 nav li {
-    display: inline-block;
-    margin: 25px;
-
+  display: inline-block;
+  margin: 25px;
 }
 
 nav {
-    float:none;
-    background: #f56f2c
-    
+  float: none;
+  background: #f56f2c;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #0B5951;
-
+  color: #0b5951;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1renm;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1renm;
 }
 
 .img-grid {
-    grid-area: 1 / 1 / -1 / -1;
-    
+  grid-area: 1 / 1 / -1 / -1;
 }
