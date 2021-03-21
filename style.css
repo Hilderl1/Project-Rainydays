@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #918877;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
@@ -10,22 +11,22 @@ body {
   background-size: 300px;
   width: 400px;
   height: 200px;
-  top: 20px;
+  top: 0px;
   position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 45px;
+  padding: 15px;
+}
+
+nav {
+  float: none;
+  background: #db6226;
 }
 
 nav li {
   display: inline-block;
   margin: 25px;
-}
-
-nav {
-  float: none;
-  background: #f56f2c;
 }
 
 nav ul {
@@ -44,12 +45,11 @@ nav a:hover {
   color: #0b5951;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1renm;
-}
-
-.img-grid {
-  grid-area: 1 / 1 / -1 / -1;
+.nav input {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 16px;
+  font-size: 17px;
 }
