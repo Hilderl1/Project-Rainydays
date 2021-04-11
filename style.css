@@ -1,4 +1,140 @@
 body {
+  background: var(--light-grey);
+  margin: 0;
+  display: block;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  color: var(--light-brown);
+  overflow: hidden;
+}
+
+:root {
+  --dark-green: #0b5951;
+  --white: #fff;
+  --orange: #db6226;
+  --light-brown: #707070;
+  --light-grey: rgb(219, 219, 219);
+}
+
+header {
+  background: white;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.logo-wrapper {
+  grid-area: 1 / 1 / -1 / 1;
+  /*border: 0.5px solid green;*/
+  padding: 1rem;
+  place-self: center;
+}
+
+.user-icon-wrapper {
+  grid-area: 1 / 1 / -1 / 1;
+  justify-self: end;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 300px;
+  display: flex;
+}
+
+nav {
+  background: var(--orange);
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  background: var(--dark-green);
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: var(--dark-green);
+  background: var(--white);
+}
+
+.search_input {
+  padding: 8px;
+  border: 2px solid var(--dark-green);
+  line-height: 1;
+}
+
+.image-grid {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.grid-image {
+  display: block;
+  flex-basis: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-basis: auto;
+  flex-wrap: nowrap;
+}
+
+.snow {
+  display: block;
+  align: left;
+  width: 400px;
+  margin: 20px;
+}
+
+.text {
+  margin: 50px;
+  text-align: left;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    display: auto;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .grid-image {
+    flex-basis: 33.333%;
+  }
+}
+
+/* NOTE: This is what i did before i got help from the teacher.
+
+body {
   margin: 0;
   padding: 0;
   background-color: #918877;
@@ -6,17 +142,33 @@ body {
   font-weight: bold;
 }
 
-.RainyDaysLogo {
-  background-image: url(img/RainyDays_Logo.png);
-  background-size: 300px;
-  width: 400px;
-  height: 200px;
-  top: 0px;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
+.header-banner {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
+  padding-top: 6px;
+  background: #918877;
+  text-align: center;
+}
+
+.figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  padding-top: 6px;
+  padding-left: 120px;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.search {
+  flex: 1;
 }
 
 nav {
@@ -53,3 +205,58 @@ nav a:hover {
   margin-right: 16px;
   font-size: 17px;
 }
+
+@media all and (max-width: 400px) {
+  .container > li {
+    flex: 1;
+  }
+  .search {
+    order: 1;
+  }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
+
+nav {
+  background: coral;
+  padding: 5px 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul il {
+  cursor: pointer;
+  padding: 15px 0;
+  flex: auto;
+}
+
+nav ul li.item {
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+}*/

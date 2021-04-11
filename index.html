@@ -6,28 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="jacketshtml" href="jackets.html">
+    <link rel="abouthtml" href="about.html">
+    <link rel="contacthtml" href="contact.html">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/shopping-cart?style=solid">
  </head>
 
 <body>
-    <header>
-       <img src="RainyDays_Logo.png" alt="Logo of thesite" class="RainyDaysLogo">
-</header>
-
- <div class="navbar">
-   <div class="container">
-
+   <header>
+   <figure class="logo-wrapper">
+         <img src="images/RainyDays_Logo.png" alt="img-logo" class="logo">
+   </figure>
+   <div class="user-icon-wrapper"> 
+       <i class="fas fa-shopping-cart"></i>
+       <!-- Handlevogn -->
+    </div>
       <nav>
-         <ul class="primary-nav">
-             <li class="Current"><a href="#">Home</a></li>
-             <li><a href="#">Jackets</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Contact</a></li>
-             <input type="text" placeholder="Search">
+         <ul class="nav-list">
+             <li><a href="index.html" class="current">Home</a></li>
+             <li><a href="jackets.html">Jackets</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li class="search">
+             <input type="text" class="search_input" placeholder="Search">
+             </li>
          </ul>
 
       </nav>
-
+ </header>
+ <main>
+    <div class="image-grid">
+       <img class="grid-image" src="images/surf-279503__480.jpg" alt="surf-img">
+       <img class="grid-image" src="images/snow-2616803__480.jpg" alt="snow-img">
+       <img class="grid-image" src="images/fishing-699129__480.jpg" alt="fishing-img">
     </div>
-  </div>  
+ </main>
 </body>
 </html>
